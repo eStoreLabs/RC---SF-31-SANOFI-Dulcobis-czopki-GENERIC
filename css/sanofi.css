@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/amazon-ember");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @keyframes slidedown {
   from {
@@ -212,12 +213,21 @@
 #es-rc #es-rc-content .es-description__list {
   text-align: left;
   list-style-type: none;
-  padding-left: 18%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 66%;
+  margin-inline: auto;
 }
 #es-rc #es-rc-content .es-description__item {
+  display: flex;
+  align-items: start;
+}
+#es-rc #es-rc-content .es-description__li-text {
   color: #a1bd39;
   font-weight: 700;
-  padding-top: 5px;
+  margin: 0;
 }
 #es-rc #es-rc-content .es-description__bullet {
   margin-right: 5px;
@@ -299,14 +309,9 @@
 #es-rc #es-rc-content .es-why .es-features__title {
   height: calc(1.8em + 0.5rem);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #es-rc #es-rc-content .es-why .es-features__title {
-    height: calc(3em + 0.5rem);
-  }
-}
-@media (min-width: 998px) {
-  #es-rc #es-rc-content .es-why .es-features__title {
-    height: calc(1.8em + 0.5rem);
+    height: calc(3.4em + 0.5rem);
   }
 }
 #es-rc #es-rc-content .es-dose {
@@ -338,13 +343,8 @@
 #es-rc #es-rc-content .es-dose__text {
   color: #000;
   text-align: center;
-  font-size: calc(1.2 * clamp(12px, 9.722px + 0.6329vw, 20px));
+  font-size: calc(1.1 * clamp(12px, 9.722px + 0.6329vw, 16px));
   padding: 0 10%;
-}
-@media (min-width: 992px) {
-  #es-rc #es-rc-content .es-dose__text {
-    font-size: calc(1 * clamp(12px, 9.722px + 0.6329vw, 20px));
-  }
 }
 #es-rc #es-rc-content .es-dose__subtitleInBox {
   font-weight: 700;
@@ -641,4 +641,7 @@
 }
 #es-rc #es-rc-content .es-footer ol {
   padding-left: 1rem;
+}
+#es-rc #es-rc-content .es-footer__logo {
+  max-width: 150px;
 }/*# sourceMappingURL=sanofi.css.map */

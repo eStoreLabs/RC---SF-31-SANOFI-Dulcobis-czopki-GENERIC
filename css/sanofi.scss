@@ -384,7 +384,11 @@ $fw-black: 900;
     padding-bottom: 0;
     .es-features__title {
       height: calc(1.8em + 0.5rem);
+      @media (min-width: 768px) and (max-width: 991px) {
+        height: calc(3.4em + 0.5rem);
+      }
     }
+
   }
 
   .es-dose {

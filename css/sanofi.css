@@ -306,7 +306,7 @@
   padding-bottom: 0;
 }
 #es-rc #es-rc-content .es-why .es-features__title {
-  height: calc(1em + 0.5rem);
+  height: calc(1.8em + 0.5rem);
 }
 #es-rc #es-rc-content .es-dose {
   background: rgb(4, 94, 72);
@@ -635,4 +635,7 @@
 }
 #es-rc #es-rc-content .es-footer ol {
   padding-left: 1rem;
+}
+#es-rc #es-rc-content .es-footer__logo {
+  max-width: 150px;
 }/*# sourceMappingURL=sanofi.css.map */

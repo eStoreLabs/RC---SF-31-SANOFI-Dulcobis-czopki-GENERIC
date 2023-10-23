@@ -383,7 +383,7 @@ $fw-black: 900;
     font-family: $Ember;
     padding-bottom: 0;
     .es-features__title {
-      height: calc(1em + 0.5rem);
+      height: calc(1.8em + 0.5rem);
     }
   }
 
@@ -608,8 +608,9 @@ $fw-black: 900;
       color: $text-black;
       //font-size: 14px;
       font-weight: 500;
+      
     }
-
+   
     & th {
       vertical-align: middle;
       border: none;
@@ -738,6 +739,9 @@ $fw-black: 900;
     }
     ol {
       padding-left: 1rem;
+    }
+    &__logo {
+      max-width: 150px;
     }
   }
 }

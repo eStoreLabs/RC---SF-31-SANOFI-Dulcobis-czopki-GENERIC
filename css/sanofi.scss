@@ -280,13 +280,21 @@ $fw-black: 900;
     &__list {
       text-align: left;
       list-style-type: none;
-      padding-left: 18%;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-width: 66%;
+      margin-inline: auto;
     }
-
     &__item {
+      display: flex;
+      align-items: start;
+    }
+    &__li-text {
       color: $main-color;
       font-weight: $fw-bold;
-      padding-top: 5px;
+      margin: 0;
     }
 
     &__bullet {

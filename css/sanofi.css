@@ -212,12 +212,21 @@
 #es-rc #es-rc-content .es-description__list {
   text-align: left;
   list-style-type: none;
-  padding-left: 18%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 66%;
+  margin-inline: auto;
 }
 #es-rc #es-rc-content .es-description__item {
+  display: flex;
+  align-items: start;
+}
+#es-rc #es-rc-content .es-description__li-text {
   color: #a1bd39;
   font-weight: 700;
-  padding-top: 5px;
+  margin: 0;
 }
 #es-rc #es-rc-content .es-description__bullet {
   margin-right: 5px;
@@ -297,17 +306,7 @@
   padding-bottom: 0;
 }
 #es-rc #es-rc-content .es-why .es-features__title {
-  height: calc(1.8em + 0.5rem);
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-why .es-features__title {
-    height: calc(3em + 0.5rem);
-  }
-}
-@media (min-width: 998px) {
-  #es-rc #es-rc-content .es-why .es-features__title {
-    height: calc(1.8em + 0.5rem);
-  }
+  height: calc(1em + 0.5rem);
 }
 #es-rc #es-rc-content .es-dose {
   background: rgb(4, 94, 72);
@@ -338,13 +337,8 @@
 #es-rc #es-rc-content .es-dose__text {
   color: #000;
   text-align: center;
-  font-size: calc(1.2 * clamp(12px, 9.722px + 0.6329vw, 20px));
+  font-size: calc(1.1 * clamp(12px, 9.722px + 0.6329vw, 16px));
   padding: 0 10%;
-}
-@media (min-width: 992px) {
-  #es-rc #es-rc-content .es-dose__text {
-    font-size: calc(1 * clamp(12px, 9.722px + 0.6329vw, 20px));
-  }
 }
 #es-rc #es-rc-content .es-dose__subtitleInBox {
   font-weight: 700;

@@ -556,6 +556,9 @@ $fw-black: 900;
 
     &__image {
       max-height: 170px;
+      &:hover {
+        cursor: pointer;
+      }
       @media (min-width: 992px) {
         max-height: 220px;
       }
@@ -685,7 +688,9 @@ $fw-black: 900;
         font-size: calc(1.2 * $fs-base);
       }
     }
-
+    &__img :hover {
+      cursor: pointer;
+    }
     &__button {
       text-decoration: none;
       color: $text;

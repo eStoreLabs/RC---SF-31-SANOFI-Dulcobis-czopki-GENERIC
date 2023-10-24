@@ -467,6 +467,9 @@
 #es-rc #es-rc-content .es-cross__image {
   max-height: 170px;
 }
+#es-rc #es-rc-content .es-cross__image:hover {
+  cursor: pointer;
+}
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-cross__image {
     max-height: 220px;
@@ -586,6 +589,9 @@
   #es-rc #es-rc-content .es-articles__subtitle {
     font-size: calc(1.2 * clamp(12px, 9.722px + 0.6329vw, 16px));
   }
+}
+#es-rc #es-rc-content .es-articles__img :hover {
+  cursor: pointer;
 }
 #es-rc #es-rc-content .es-articles__button {
   text-decoration: none;
